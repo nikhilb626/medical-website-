@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+<body>
+    <navbar class="nav_main" id="nav_main">
+        <div class="nav_top">
+            <div class="date_time"><i class="far fa-clock"></i><span>Monday - Saturday, 8AM to 10PM</span>
+            </div>
+            <div class="phone"><i class="fas fa-mobile-alt"></i>
+                <span>Call us now +91 6395 7063 50</span></div>
+        </div>
+        <div class="nav_bottom">
+            <div class="nav_logo">
+                <div class="logo_here"><img src="caduceus.png" alt=""> </div>
+                <div class="logo_name">MEDICA</div>
+            </div>
+            <div class="nav_links">
+                <a href="#home_page">HOME</a>
+                <a href="#about_us">ABOUT</a>
+                <a href="#features">FEATURES</a>
+                <a href="#doctors">DOCTORS</a>
+                <a href="#serve">SERVICES</a>
+                <a href="#contact">CONTACT</a>
+                <a href="#appointment">APPOINTMENT</a>
+            </div>
+
+            <div class="toggle_nav" id="nav_bars" onclick="toggleOpen()"><i class="fas fa-bars"></i></div>
+        </div>
+    </navbar>
+
+    <div class="toggle_navigation" id="menu_toggle">
+        <div id="nav_times" onclick="handleClose()"><i class="fas fa-times"></i></div>
+        <div class="toggle_navlink">
+            <a href="#home_page" onclick="handleClose()">HOME</a>
+            <a href="#about_us" onclick="handleClose()">ABOUT</a>
+            <a href="#features" onclick="handleClose()">FEATURES</a>
+            <a href="#doctors" onclick="handleClose()">DOCTORS</a>
+            <a href="#serve" onclick="handleClose()">SERVICES</a>
+            <a href="#contact" onclick="handleClose()">CONTACT</a>
+            <a href="#appointment" onclick="handleClose()">APPOINTMENT</a>
+        </div>
+    </div>
+
+    
+
+    <section id="home_page"  data-aos="fade-up"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-sine">
+        <div class="content_container">
+            <div class="home_heading">
+                In an emergency? Need help now?
+            </div>
+            <div class="home_button"><button>Make An Appointment</button></div>
+        </div>
+    </section>
+
+
+    <section id="services"  >
+
+        <div class="service_card" data-aos="zoom-in"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine">
+            <div class="service_logo"><i class="fas fa-heartbeat"></i></div>
+            <div class="service_heading">Full Body Checkup</div>
+            <div class="service_detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, magni.</div>
+        </div>
+
+
+        <div class="service_card" data-aos="zoom-in"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine" >
+            <div class="service_logo"><i class="fas fa-pills"></i></div>
+            <div class="service_heading">Proper Medication</div>
+            <div class="service_detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, recusandae?</div>
+        </div>
+
+
+        <div class="service_card" data-aos="zoom-in"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine">
+            <div class="service_logo"><i class="fas fa-syringe"></i></div>
+            <div class="service_heading">instant Treatment</div>
+            <div class="service_detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, explicabo.</div>
+        </div>
+
+
+        <div class="service_card" data-aos="zoom-in"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine">
+            <div class="service_logo"><i class="fas fa-dna"></i></div>
+            <div class="service_heading">intensive care</div>
+            <div class="service_detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, dolores.</div>
+        </div>
+    </section>
+
+
+    <section id="about_us">
+        <div class="about_heading" data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine">ABOUT US</div>
+        <div class="about_summary" data-aos="fade-zoom-in"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</div>
+        <div class="about_details">
+            <div class="about_left" data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
+                <img src="hospBuild.jpg" alt="hosp">
+            </div>
+            <div class="about_right" data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
+
+                <div class="about_right_heading">
+                    Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.
+                </div>
+                <div class="about_right_points">
+                    <ul>
+                        <li> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                        <li> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                        <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                    </ul>
+                </div>
+                
+                <div class="about_right_para">
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </div>
+            </div>
+    </section>
+
+
+    <section id="features" >
+        
+        <div class="feature_card" data-aos="zoom-out"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine">
+            <div class="feature_logo">
+                <i class="fas fa-user-md"></i>
+                <span>80</span>
+            </div>
+            <div class="feature_heading"><span>Doctors</span>consequuntur quae qui deca rode</div>
+            <div class="feature_link"><a href="#">Find out more >></a></div>
+        </div>
+
+
+        <div class="feature_card" data-aos="zoom-out"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine">
+            <div class="feature_logo">
+                <i class="far fa-hospital"></i>
+                <span>26</span>
+            </div>
+            <div class="feature_heading"><span>Departments</span>consequuntur quae qui deca rode</div>
+            <div class="feature_link"><a href="#">Find out more >></a></div>
+        </div>
+
+
+        <div class="feature_card" data-aos="zoom-out"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine">
+            <div class="feature_logo">
+                <i class="fas fa-flask"></i>
+                <span>17</span>
+            </div>
+            <div class="feature_heading"><span>Research Lab</span>consequuntur quae qui deca rode</div>
+            <div class="feature_link"><a href="#">Find out more >></a></div>
+        </div>
+
+
+        <div class="feature_card" data-aos="zoom-out"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine">
+            <div class="feature_logo">
+                <i class="fas fa-certificate"></i>
+                <span>170</span>
+            </div>
+            <div class="feature_heading"><span>Awards</span>consequuntur quae qui deca rode</div>
+            <div class="feature_link"><a href="#">Find out more >></a></div>
+        </div>
+
+    </section>
+
+
+
+    <section id="feature_another" >
+
+            <div class="another_here">
+                <div class="another_left">
+             <div class="another_logo">	
+                <i class="far fa-sticky-note"></i></div>
+                <div class="another">
+                    <div class="another_heading">Est labore ad</div>
+                    <div class="another_content">Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</div>
+                </div>
+            </div>
+
+            <div class="another_here" >
+                <div class="another_left">
+                <div class="another_logo"><i class="fas fa-cube"></i></div>
+                   <div class="another">
+                       <div class="another_heading">Harum esse qui</div>
+                       <div class="another_content">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</div>
+                   </div>
+               </div>
+
+
+               <div class="another_here" >
+                   <div class="another_left">
+                <div class="another_logo"><i class="far fa-images"></i></div>
+                   <div class="another">
+                       <div class="another_heading">Aut occaecati</div>
+                       <div class="another_content">Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</div>
+                   </div>
+               </div>
+
+
+               <div class="another_here" >
+                   <div class="another_left">
+                <div class="another_logo"><i class="fas fa-shield-alt"></i></div>
+                   <div class="another">
+                       <div class="another_heading">Beatae veritatis</div>
+                       <div class="another_content">Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</div>
+                   </div>
+               </div>
+
+
+        </div>
+        <div class="another_right" >
+            <div class="another_left">
+            <img src="labo.png" alt="labo">
+        </div>
+    </section>
+
+
+
+    <section id="serve">
+        <div class="serve_heading"  data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine">SERVICES</div>
+        <div class="serve_para"  data-aos="zoom-in"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga totam nulla cupiditate consequuntur obcaecati sapiente provident cumque velit nihil minus illo ut suscipit, assumenda tenetur accusamus perspiciatis nesciunt incidunt quibusdam.</div>
+
+        <div class="serve_cards"  >
+
+            <div class="serve_card" data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
+                <div class="serve_logo"><i class="fas fa-heartbeat"></i></div>
+                <div class="serve_card_heading">Lorem Ipsum</div>
+                <div class="serve_details">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime quisquam nostrum architecto consequuntur incidunt.</div>
+            </div>
+
+            <div class="serve_card" data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
+                <div class="serve_logo"><i class="fas fa-pills"></i></i></div>
+                <div class="serve_card_heading">Dolor Sitema</div>
+                <div class="serve_details">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime quisquam nostrum architecto consequuntur incidunt.</div>
+            </div>
+
+
+            <div class="serve_card" data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
+                <div class="serve_logo"><i class="fas fa-hospital-user"></i></div>
+                <div class="serve_card_heading">Sed ut perspiciatis</div>
+                <div class="serve_details">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime quisquam nostrum architecto consequuntur incidunt.</div>
+            </div>
+
+
+            <div class="serve_card" data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
+                <div class="serve_logo"><i class="fas fa-dna"></i></div>
+                <div class="serve_card_heading">Magni Dolores</div>
+                <div class="serve_details">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime quisquam nostrum architecto consequuntur incidunt.</div>
+            </div>
+
+
+            <div class="serve_card" data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
+                <div class="serve_logo"><i class="fas fa-wheelchair"></i></div>
+                <div class="serve_card_heading">Nemo Enim</div>
+                <div class="serve_details">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime quisquam nostrum architecto consequuntur incidunt.</div>
+            </div>
+
+
+            <div class="serve_card" data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
+                <div class="serve_logo"><i class="fas fa-medkit"></i></div>
+                <div class="serve_card_heading"> Eiusmod Tempor</div>
+                <div class="serve_details">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime quisquam nostrum architecto consequuntur incidunt.</div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <section id="appointment">
+        <div class="app_heading"  data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine">MAKE AN APPOINTMENT</div>
+        <div class="app_para"   data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</div>
+
+        <div class="app_form"  data-aos="zoom-out"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine">
+            <form action="">
+                <div class="inp_row">
+                    <input type="text" placeholder="Your Name">
+                    <input type="text" placeholder="Your Email">
+                    <input type="text" placeholder="Your Phone">
+                </div>
+                <div class="inp_row">
+                    <input type="date">
+                    <select name="department" id="dept">
+                        <option value="#" selected>select department
+                        </option>
+                        <option value="dept1">department 1</option>
+                        <option value="dept2">department 2</option>
+                        <option value="dept3">department 3</option>
+                        <option value="dept4">
+                            department 4
+                        </option>
+                    </select>
+
+                    <select name="doctor" id="doctor">
+                        <option value="#" selected>select doctor</option>
+                        <option value="doc1">doctor 1</option>
+                        <option value="doc2">doctor 2</option>
+                        <option value="doc3">
+                            doctor 3
+                        </option>
+                    </select>
+                </div>
+                <div class="app_message">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="type a message(Optional)"></textarea>
+                </div>
+
+                <div class="button"><button>Make Appointment</button></div>
+            </form>
+        </div>
+    </section>
+
+    <section id="testimonial"  data-aos="fade-up"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-sine">
+
+        <div class="test_heading">TESTIMONIALS</div>
+        <div class="test_para">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</div>
+        <div class="main-carousel">
+            <div class="carousel-cell">
+                <div class="test_upper">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sint aliquid sunt. Sapiente ipsa dolorum mollitia eum magni. Veniam, commodi Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, blanditiis!</div>
+                <div class="test_bottom">
+                    <div class="test_profile">
+                        <img src="p1.jpg" alt="">
+                    </div>
+                    <div class="test_profile_name">Nikhil Bhatt</div>
+                    <div class="profile_post">entreprenuer</div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="test_upper">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sint aliquid sunt. Sapiente ipsa dolorum mollitia eum magni. Veniam, commodi Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, blanditiis!</div>
+                <div class="test_bottom">
+                    <div class="test_profile">
+                        <img src="p2.jpg" alt="">
+                    </div>
+                    <div class="test_profile_name">Sara Wilson</div>
+                    <div class="profile_post">Designer</div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="test_upper">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sint aliquid sunt. Sapiente ipsa dolorum mollitia eum magni. Veniam, commodi Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, blanditiis!</div>
+                <div class="test_bottom">
+                    <div class="test_profile">
+                        <img src="p3.jpg" alt="">
+                    </div>
+                    <div class="test_profile_name">Jena Karlis</div>
+                    <div class="profile_post">Store Owner</div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="test_upper">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sint aliquid sunt. Sapiente ipsa dolorum mollitia eum magni. Veniam, commodi Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, blanditiis!</div>
+                <div class="test_bottom">
+                    <div class="test_profile">
+                        <img src="p4.jpg" alt="">
+                    </div>
+                    <div class="test_profile_name">Matt Brandon</div>
+                    <div class="profile_post">Freelancer</div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="test_upper">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sint aliquid sunt. Sapiente ipsa dolorum mollitia eum magni. Veniam, commodi Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, blanditiis!</div>
+                <div class="test_bottom">
+                    <div class="test_profile">
+                        <img src="p5.jpg" alt="">
+                    </div>
+                    <div class="test_profile_name">Jhon Larsen</div>
+                    <div class="profile_post">entreprenuer</div>
+                </div>
+            </div>
+           
+        
+          </div>
+    </section>
+
+
+    <section id="doctors">
+        <div class="doc_heading" data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine">Doctors</div>
+        <div class="doc_para" data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ut numquam ab inventore vero suscipit, minus doloribus blanditiis. Obcaecati fugiat dicta voluptas rerum distinctio deserunt Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque maxime maiores laborum voluptates error vitae inventore rem quaerat quos illo? Autem perferendis laboriosam alias nostrum similique saepe voluptates magni adipisci.</div>
+
+        <div class="doc_cards">
+            
+            <div class="doc_card"  data-aos="zoom-out"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
+                <div class="doc_profile">
+                    <img src="doc1.jpg" alt="">
+                </div>
+                <div class="doc_name">Sarah Johnson</div>
+                <div class="doc_post">Cheif Medical Officer</div>
+                <div class="doc_social">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+
+
+            <div class="doc_card"  data-aos="zoom-out"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
+                <div class="doc_profile">
+                    <img src="doc2.jpg" alt="">
+                </div>
+                <div class="doc_name">Amon Jepson</div>
+                <div class="doc_post">Neurosurgen</div>
+                <div class="doc_social">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+
+
+            <div class="doc_card"  data-aos="zoom-out"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
+                <div class="doc_profile">
+                    <img src="doc3.jpg" alt="">
+                </div>
+                <div class="doc_name">William Anderson</div>
+                <div class="doc_post">Cardiologist</div>
+                <div class="doc_social">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+
+
+            <div class="doc_card"  data-aos="zoom-out"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
+                <div class="doc_profile">
+                    <img src="doc4.jpg" alt="">
+                </div>
+                <div class="doc_name">Walter White</div>
+                <div class="doc_post">Anasthesiologist</div>
+                <div class="doc_social">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+
+    <section id="faq" >
+        <div class="faq_heading"  data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine">Frequently asked Questions</div>
+        <div class="faq_para"  data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi labore itaque enim dolores tenetur perferendis hic voluptatum voluptatem id? Ducimus, pariatur magni. Accusamus praesentium inventore obcaecati, illum eligendi nisi vel?</div>
+
+        <div class="accordian_container"  data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine">
+            <button class="accordion">Non consectetur a erat nam at lectus urna duis?</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+
+
+<button class="accordion">Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+
+<button class="accordion">ortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+
+</div>
+    </section>
+
+
+    <section id="contact">
+        <div class="contact_heading"  data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine">Contact Us
+        </div>
+        <div class="contact_para"  data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptatibus enim libero quisquam natus adipisci nostrum quo suscipit fuga mollitia facere, quod nihil obcaecati aut reiciendis aliquid, laudantium vitae eaque.</div>
+        <div class="contact_container">
+            <div class="contact_left" >
+                <div class="address_container"  data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-sine">
+                   
+                    <div class="contact_logo"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="contact_name">Our Address</div>
+                    <div class="contact_here">A108 Adam Street, New York, NY 535022</div>
+                </div>
+                <div class="left_bottom">
+                    <div class="email_container"  data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-sine">
+                        <div class="contact_logo"><i class="far fa-envelope"></i></div>
+                        <div class="contact_name">Email Us</div>
+                        <div class="contact_here">info@example.com</div>
+                    </div>
+                    <div class="call_container"  data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-sine">
+                        <div class="contact_logo"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contact_name">Call Us</div>
+                        <div class="contact_here">+91 6395 7063 50</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact_right"  data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
+                <div class="form" >
+                    <div class="form_row">
+                        <input type="text" placeholder="Your name">
+                        <input type="text" placeholder="Your email">
+
+                    </div>
+                    <input type="text" placeholder="subject">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+                    <button>submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="footer">
+        © Copyright Nikhil Bhatt. All Rights Reserved
+    </section>
+
+
+
+
+
+
+
+
+    
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script>
+        AOS.init();
+      </script>
+
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("nav_main").style.top = "0";
+          } else {
+            document.getElementById("nav_main").style.top = "-50px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        </script>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>        
+<script src="script.js"></script>
+</body>
+</html>
