@@ -10,7 +10,7 @@ body{
 
 .nav_main{
     position: fixed;
-    z-index: 100px;
+    z-index: 100;
     width: 100vw;
     top: 0;
     left: 0;
@@ -92,14 +92,13 @@ color: #3FBBC0;
 
 
 #home_page{
+    margin-top: 100px;
     background-image: url("med.jpg");
     width: 100vw;
     height: 85vh;
     background-position: center;
     background-size: cover;
-    position: absolute;
     background-repeat: no-repeat;
-    top:110px;
     z-index:-23;
     filter: grayscale(10%) brightness(92%) saturate(82%) opacity(96%);
 -webkit-filter: grayscale(10%) brightness(92%) saturate(82%) opacity(96%);
@@ -155,11 +154,7 @@ flex-direction: column;
 }
 
 #services{
-     position: absolute;
      width: 100vw;
-     top: 660px;
-     left: 0;
-     right: 0;
      display:flex;
      z-index:-2;
      background: white;
@@ -219,12 +214,8 @@ flex-direction: column;
 
 
 #about_us{
-    position:absolute;
-    top: 1100px;
     z-index:-2;
     width: 100vw;
-    left: 0;
-    right: 0;
     background: white;
 
 }
@@ -289,10 +280,6 @@ flex-direction: column;
 
 
 #features{
-    position: absolute;
-    top: 1700px;
-    left: 0;
-    right: 0;
     width: 100vw;
    display:flex;
    flex-wrap:wrap;
@@ -350,71 +337,11 @@ flex-direction: column;
     font-size: 18px;
 }
 
-#feature_another{
-    position: absolute;
-    top: 2100px;
-    left:0;
-    right: 0;
-    width: 100vw;
-    display:flex;
-    z-index:-2;
-    background: white;
-}
 
-
-.another_left{
-    width:50%;
-    padding: 20px 30px;
-    padding-left: 100px;
-}
-
-.another_here{
-    display:flex;
-    margin-bottom: 25px;
-    padding-left: 20px;
-
-}
-
-.another_logo i{
-    color:#3FBBC0;
-    font-size:50px;
-    margin-right: 10px;
-    position:relative;
-    top: 5px;
-}
-
-.another_heading{
-    font-size: 22px ;
-    font-weight: bolder;
-    margin-bottom:10px;
-
-}
-
-.another_content{
-    font-size: 18px;
-}
-
-
-.another_right{
-    width: 50%;
-
-}
-
-.another_right img{
- width: 100%;
- height: 400px;
- filter: grayscale(10%) brightness(92%) saturate(82%) opacity(96%);
- -webkit-filter: grayscale(10%) brightness(92%) saturate(82%) opacity(96%);
- -moz-filter: grayscale(10%) brightness(92%) saturate(82%) opacity(96%);
-}
 
 
 #serve{
     width: 100vw;
-    position: absolute;
-    top: 2600px;
-    left: 0;
-    right: 0;
     z-index:-2;
     background: white;
 
@@ -499,11 +426,7 @@ flex-direction: column;
 
 
 #appointment{
-    position: absolute;
     width: 100vw;
-    top: 3560px;
-    left: 0;
-    right: 0;
     z-index: -2;
     background: #F7FCFC;
 
@@ -613,10 +536,6 @@ flex-direction: column;
   }
   
   #testimonial{
-    position: absolute;
-    top: 4200px;
-    left: 0;
-    right: 0;
     width: 100vw;
     z-index:-2;
     background: white;
@@ -689,11 +608,7 @@ flex-direction: column;
 
 
 #doctors{
-    position: absolute;
     width: 100vw;
-    top: 4900px;
-    left: 0;
-    right: 0;
     background:#F0FAFA;
     z-index:-2;
 
@@ -794,11 +709,7 @@ flex-direction: column;
 
 
 #faq{
-    position:absolute;
     width: 100vw;
-    top: 5650px;
-    left: 0;
-    right: 0;
     z-index:-2;
     padding-bottom:50px;
     background: white;
@@ -853,10 +764,6 @@ flex-direction: column;
 
 
   #contact{
-      position: absolute;
-      top:6300px;
-      left:0;
-      right:0;
       width: 100vw;
       z-index:-2;
       background: white;
@@ -999,10 +906,6 @@ padding: 40px;
 
 
 #footer{
-    position: absolute;
-    top: 7000px;
-    left: 0;
-    right: 0;
     width: 100vw;
     background:#F0FAFA;
     text-align: center;
@@ -1042,7 +945,7 @@ padding: 40px;
     display:flex;
     flex-direction: column;
     transition: .5s ease-out;
-
+    z-index: 100;
 }
 
 
@@ -1083,48 +986,16 @@ padding: 40px;
 
 
 
-@media only screen and (max-width: 1319px) {
-    #faq{
-        top: 6100px;
-    }
-
-    #contact{
-        top:6700px;
-    }
-    #footer{
-        top:7400px;
-    }
-}
 
 
 
 @media only screen and (max-width: 1209px){
-    #appointment{
-        top: 3860px;
-    }
-
-    #testimonial{
-        top:4500px;
-    }
-
-    #doctors{
-        top:5300px;
-    }
+   
 
     .main-carousel{
         height: 85vh;
     }
 
-    #faq{
-        top: 6450px;
-    }
-
-    #contact{
-        top:7000px;
-    }
-    #footer{
-        top:7700px;
-    }
 }
 
 
@@ -1147,29 +1018,7 @@ padding: 40px;
         width:100%;
     }
 
-    #features{
-        top:2300px;
-    }
-    #feature_another{
-        top:2800px;
-    }
-    #serve{
-        top:3370px;
-    }
 
-
-
-    #appointment{
-        top: 4660px;
-    }
-
-    #testimonial{
-        top:5300px;
-    }
-
-    #doctors{
-        top:6000px;
-    }
 
     .main-carousel{
         height: 75vh;
@@ -1177,17 +1026,6 @@ padding: 40px;
     .carousel-cell{
         width:50%;
         
-    }
-
-    #faq{
-        top: 7200px;
-    }
-
-    #contact{
-        top:7800px;
-    }
-    #footer{
-        top:8500px;
     }
 
     .nav_links{
@@ -1211,7 +1049,6 @@ padding: 40px;
 
     #services{
         flex-wrap:wrap;
-        top:610px;
         justify-content: center;
     }
     .service_card{
@@ -1231,17 +1068,6 @@ padding: 40px;
 
 
 
-    #appointment{
-        top: 5660px;
-    }
-
-    #testimonial{
-        top:6600px;
-    }
-
-    #doctors{
-        top:7250px;
-    }
 
     .main-carousel{
         height: 70vh;
@@ -1251,13 +1077,7 @@ padding: 40px;
         
     }
 
-    #faq{
-        top: 8500px;
-    }
-
-    #contact{
-        top:9150px;
-    }
+  
 
     .contact_container{
         flex-direction: column;
@@ -1286,9 +1106,6 @@ padding: 40px;
         width: 100%;
     }
 
-    #footer{
-        top:10600px;
-    }
 
 
     .inp_row{
@@ -1322,52 +1139,19 @@ padding: 40px;
       width: 90%;
   }
 
-  #about_us{
-      top: 1600px;
-  }
- #features{
-     top: 2780px;
- }
+
 
  .feature_card{
      width: 100%;
  }
 
- #feature_another{
-     top: 3500px;
- }
 
- #serve{
-     top:4050px;
- }
-
- #appointment{
-     top:6500px;
- }
-
- #testimonial{
-    top: 7560px;
- }
-
- #doctors{
-     top:8400px;
- }
 
  .main-carousel{
-     top:300px;
      height: 85vh;
  }
- #faq{
-    top:10700px;
- }
 
- #contact{
-    top:11560px;
- }
 
- #footer{
-     top: 13000px;
- }
 
  .doc_card{
      width: 400px;
